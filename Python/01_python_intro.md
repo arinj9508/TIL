@@ -2,7 +2,7 @@
 
 # 01_python_intro
 
-> 중점 포인트
+> :star:중점 포인트:star:
 >
 > - 시퀀스 자료형의 특징과 활용 방법
 > - 파이썬에서 독특하게 사용되는 연산자
@@ -130,7 +130,7 @@ print(f'Hello, {name}')
 
 
 
-## 연산자
+## :star:연산자
 
 - `/`는 float 값을 돌려준다. 정수의 결과를 얻고 싶으면 `//`을 사용한다.
 - `//`은 몫 `%`은 나머지
@@ -145,11 +145,11 @@ print(f'Hello, {name}')
 
 ![image-20200329004432044](01_python_intro.assets/image-20200329004432044.png)
 
-- a and b
+- :exclamation: a and b
   - `거짓인거 먼저` return,
   - 둘 다 거짓일 때, 첫번째 값 return
   - 둘 다 참일 때, 두번째 값 return
-- a or b
+- :exclamation: a or b
   - `참인거 먼저` return
   - 둘 다 참일 때, 첫번째 값 return
   - 둘 다 거짓일 때, 두번째 값 return
@@ -220,7 +220,7 @@ print(f'Hello, {name}')
 
 
 
-## 시퀀스(Sequence) 자료형
+## :star:시퀀스(Sequence) 자료형:star:
 
 > 데이터가 순서대로 나열된 형식을 나타낸다. (`!주의` : `정렬되었다`라는 뜻은 아니다!!)
 
