@@ -4,7 +4,7 @@
 >
 >[함수의 리턴](#함수의-return)
 >
->[스코프](#이름-공간(namespace))
+>[스코프](#이름-공간)
 
 
 
@@ -217,7 +217,7 @@ login(**my_account)
 
 ---
 
-### 이름 공간(namespace)
+### 이름 공간
 
 #### :star:LEGB Rule
 
