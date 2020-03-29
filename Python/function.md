@@ -174,3 +174,119 @@ print(result)
 
 ---
 
+
+
+### 실습
+
+- 로그인 검증 예제
+- 여기서 strip()은 양쪽의 특수기호나 공백을 지워주는 것.
+
+```python
+def login(username, password, password_confirmation):
+    if username.strip() == '' or password.strip() == '':
+        return '장난하지 마세요.'
+    if len(password) < 8:
+        return '비밀번호는 8자리 이상 적으세요!'
+    
+    if password == password_confirmation:
+        return f'{username}님 가입 완료! 축하축하 :)'
+    else:
+        return f'비밀번호와 비밀번호 확인이 일치하지 않아요!'
+```
+
+```python
+my_account = {
+    'username': '        ',
+    'password': '1q2w3e4r',
+    'password_confirmation': '1q2w3e4r'
+}
+
+login(**my_account)
+# '장난하지 마세요.' 출력
+```
+
+---
+
+#### 실습 2 : URL
+
+![image-20200330001532844](function.assets/image-20200330001532844.png)
+
+---
+
+![image-20200330001721226](function.assets/image-20200330001721226.png)
+
+---
+
+### 이름 공간(namespace)
+
+#### :star:LEGB Rule
+
+- `L`ocal scope : 정의된 함수
+- `E`nclosed scope : 상위 함수
+- `G`lobal scope : 함수 밖의 변수 혹은 import된 모듈
+- `B`uilt-in scope : 파이썬 내장 함수 또는 속성
+
+---
+
+![image-20200330011348657](function.assets/image-20200330011348657.png)
+
+1. `str()` 코드가 실행되면
+2. 함수에서 실행된 코드가 아니기 때문에 `L`, `E` 를 스킵하고,
+3. str 을 Global scope에서 찾아서 `str = 4`를 가져오고, 
+4. 이는 함수가 아니라 변수이기 때문에 `not callable`하다라는 오류를 내뱉게 됩니다.
+5. 우리가 원하는 `str()`은 Built-in scope에 있기 때문입니다.
+
+---
+
+#### Global scope를 바꾸고 싶을 때
+
+```python
+global_num = 3   # 전역변수(Global Variable)
+
+def localscope():
+    global_num = 5    # 지역변수(Local Variable)
+    return f'global_num이 {global_num}으로 바뀌었습니다!'
+
+print(localscope())
+# global_num이 5으로 바뀌었습니다!
+print(global_num)
+# 3
+```
+
+```python
+global_num = 3   # 전역변수(Global Variable)
+
+def localscope():
+    global global_num				# 함수 안에 글로벌을 선언한다.
+    
+    global_num = 5
+    return f'global_num이 {global_num}으로 바뀌었습니다!'
+
+print(localscope())
+# global_num이 5으로 바뀌었습니다!
+print(global_num)
+# 5
+```
+
+---
+
+### 이름 공간의 `수명 주기`
+
+- built-in names: 파이썬이 실행된 이후부터 영원히 유지
+
+- global namespace : 모듈이 호출된 시점 이후 혹은 이름 선언된 이후부터 인터프리터가 끝날때 까지 유지
+
+- local namespace : 함수가 호출될 때 생성되고, 함수가 가 종료될 때까지 유지 (함수 내에서 처리되지 않는 예외를 일으킬 때 삭제됨)
+
+---
+
+
+
+## 재귀 함수(recursive function)
+
+> 함수 내부에서 자기 자신을 호출하는 함수
+>
+> 알고리즘 구현 시 유용
+
+
+
