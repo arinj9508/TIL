@@ -554,7 +554,7 @@ class calculator:
 
 
 
-## :white_check_mark:상속
+## 상속
 
 > 클래스의 가장 큰 특징 :`상속`기능을 가지고 있는 것
 >
