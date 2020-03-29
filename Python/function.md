@@ -136,3 +136,41 @@ def mymax(*args):
 - 정의되지 않은 키워드는 `dict` 형태로 처리, `**`로 표현
 - `kwagrs` 이름 사용, `**kwagrs`를 통해 인자를 받아 처리 가능
 
+![image-20200329234510204](function.assets/image-20200329234510204.png)
+
+---
+
+### 인자 리스트 언패킹(unpacking arguments lists)
+
+- packing : 여러개의 값을 하나의 컬렉션으로 묶어 변수에 대입
+  - collection = 1, 2, 3
+- unpacking : 컬섹션 속의 요소들을 여러개의 변수에 나누어 대입
+  - a, b, c = collection
+
+```python
+list(range(3,6))
+# [3,4,5]
+
+args = [3,6]
+list(range(*args))
+# [3,4,5]
+```
+
+---
+
+### :exclamation:  가변인자 + 정의되지 않은 키워드 인자
+
+```python
+def person(*args, **kwargs):
+    return args, kwargs
+```
+
+```python
+result = person('아린', '경은', '예원', 취미='쇼핑', 특기='운동')
+print(result)
+
+# (('아린', '경은', '예원'), {취미:'쇼핑', 특기:'운동'})
+```
+
+---
+
