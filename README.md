@@ -1,3 +1,3 @@
 ### Python
 
-[python_intro](python_intro.md)
+[python_intro](Python/python_intro.md)
