@@ -10,3 +10,6 @@
 
 ### Django
 
+[Django_intro](Django/Django_intro.md)
+
+[Django_crud](Django/Django_crud.md)
