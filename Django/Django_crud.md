@@ -102,11 +102,11 @@ class Article(models.Model):
 
 * 데이터베이스에는 다음과 같은 테이블이 생성되어 있을 것이다.
 
-  ![image-20200331234649749](../../live-django-crud/README.assets/image-20200331234649749.png)
+  ![image-20200331235141828](Django_crud.assets/image-20200331235141828.png)
 
 * 정말이다!
 
-  ![image-20200331234706654](../../live-django-crud/README.assets/image-20200331234706654.png)
+  ![image-20200331235119464](Django_crud.assets/image-20200331235119464.png)
 
 ### 추가) admin 등록
 
