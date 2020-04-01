@@ -14,7 +14,7 @@
 
 [Django_intro](Django/Django_intro.md)
 
-[Django_app/templates](Django/Django_app&templates)
+[Django_app/templates](Django/Django_app&templates.md)
 
 [Django_model/migration](Django/Django_model&migration.md)
 
