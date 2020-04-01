@@ -12,4 +12,7 @@
 
 [Django_intro](Django/Django_intro.md)
 
-[Django_crud](Django/Django_crud.md)
+[Django_model/migration](Django/Django_model&migration)
+
+[Django_ORM](Django/Django_ORM)
+
