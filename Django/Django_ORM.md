@@ -130,6 +130,3 @@ admin.site.register(Article)
 * `/admin/` url로 접속하여, 관리자 계정으로 로그인
 
 
-
-
-
