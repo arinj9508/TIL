@@ -16,7 +16,7 @@
 
 [Django_app/templates](Django/Django_app&templates)
 
-[Django_model/migration](Django/Django_model_migration)
+[Django_model/migration](Django/Django_model&migration.md)
 
 [Django_ORM](Django/Django_ORM)
 
