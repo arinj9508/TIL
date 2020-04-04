@@ -8,6 +8,14 @@
 
 [OOP](Python/OOP.md)
 
+### Web
+
+[HTML]
+
+[CSS]
+
+[Javascript]
+
 ### Django
 
 [Django_공식문서링크](Django/Django_공식문서링크.md)
@@ -19,4 +27,8 @@
 [Django_model/migration](Django/Django_model&migration.md)
 
 [Django_ORM](Django/Django_ORM.md)
+
+### Algorithm
+
+
 
