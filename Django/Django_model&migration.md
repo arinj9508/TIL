@@ -73,3 +73,11 @@ class Article(models.Model):
 * 정말이다!
 
   ![image-20200401231540057](Django_model&migration.assets/image-20200401231540057.png)
+
+### 3. Migration 명령어
+
+![image-20200406095429647](Django_model&migration.assets/image-20200406095429647.png)
+
+![image-20200406095717095](Django_model&migration.assets/image-20200406095717095.png)
+
+- [] : optional한 부분
